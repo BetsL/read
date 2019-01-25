@@ -98,16 +98,72 @@ textarea {
    ========================================================================== */
 
 
-.content-wrapper  {
-    width: 90%
-    margin: 50px 0;
-}
-
-
 /*-------- GENERAL STYLES --------*/
 
 
-header,
+html  {
+    font-size: 16px;
+}
+
+body  {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #5D6063;
+}
+
+ul  {
+    list-style-type: none;
+}
+
+a {
+    color: #54A5C4;
+    text-decoration: none;
+}
+
+.content-wrapper  {
+    width: 90%;
+    margin: 0;
+}
+
+
+/* -------- BASE HEADER + FOOTER STYLES -------- */
+
+
+header  {
+    background-color: #54575A;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header .content-wrapper {
+    margin: 0;
+    padding: 10px;
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header nav  {
+    display: flex;
+    justify-content: inherit;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: .3em;
+}
+
 footer  {
     display: flex;
     justify-content: center;
@@ -115,34 +171,32 @@ footer  {
     flex-flow: row wrap;
 }
 
-header  {
-    padding: 0;
-}
 
-header .content-wrapper {
+/* -------- MOBILE STYLES -------- */
+
+
+/* Hero Area */
+
+.hero-area  {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
-}
-
-header nav  {     /* #5D6063 */
-    background-color: #54575A;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-flow: row wrap;
 }
 
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-
-    max-width: 400px;
-
+.hero-area h1 {
+    color: #fff;
+    font-size: 5em;
+    font-weight: lighter;
 }
+
+
+
+
+
+
+
+
+
 
 .hero-area  {
     display: flex;
