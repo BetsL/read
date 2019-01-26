@@ -102,7 +102,7 @@ textarea {
 
 
 html  {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body  {
@@ -119,6 +119,13 @@ ul  {
 a {
     color: #54A5C4;
     text-decoration: none;
+}
+
+h1, h2, p, a    {
+    line-height: 1.3em;
+    font-weight: lighter;
+    font-style: lighter;
+    text-align: center;
 }
 
 .content-wrapper  {
@@ -161,8 +168,14 @@ header nav ul {
     align-items: center;
     flex-flow: row wrap;
     margin: 0;
-    padding: .3em;
+    padding: .6em;
 }
+
+/* header nav ul li  {
+    list-style: none;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+} */
 
 footer  {
     display: flex;
@@ -178,87 +191,61 @@ footer  {
 /* Hero Area */
 
 .hero-area  {
+    background-color: #5D6063;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    padding-top: 9em;
+    padding-bottom: 9em;
 }
 
 .hero-area h1 {
     color: #fff;
-    font-size: 5em;
+    font-size: 6em;
     font-weight: lighter;
+    font-style: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
+/* Features */
 
-
-
-
-
-
-
-
-
-.hero-area  {
+.features {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background-color: #5D6063;
 }
 
-/* body  {
-    font-family: 'Roboto', sans-serif;
-    padding: 0em 2em;
-    line-height: 1.25em;
-    color: #fff;
+.features .content-wrapper  {
+    padding: 2em;
+}
+
+.features .strategies-items {
     display: flex;
     justify-content: center;
-} */
-
-h2, p {                       /* check */
-    line-height: 1.3em;
-    font-weight: lighter;
-    font-style: normal;
-    text-align: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: inherit;
 }
 
-
-
-
-/*-------- HEADER AND FOOTER STYLES --------*/
-
-
-/* header  {
-    text-align: center;
-    color: #FFF;
-    width: 100%;
+.features article h2  {
+    padding: auto 1em;
 }
 
-nav {
-    background-color: #54575A;
+.features article p {
+    padding: 1em;
 }
 
-nav ul  {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    max-width: 100%;
-
+#strategy-2 {
+    border-top: 2px solid #888F95;
+    border-bottom: 2px solid #888F95;
 }
 
-nav li  {
-    list-style: none;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+footer  {
+    border-top: 1px solid #888F95;
 }
-
-.hero {
-    padding-top: 9em;
-    padding-bottom: 9em;
-    background-color: #5D6063;
-}
-
-*/
 
 
 
