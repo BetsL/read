@@ -231,16 +231,49 @@ footer  {
 }
 
 .features article h2  {
+    font-size: 3rem;
     padding: auto 1em;
 }
 
-.features article p {
+.features article .example {
+    font-size: 3em;
     padding: 1em;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.features article #phoneme-1,
+#phoneme-2, #phoneme-3  {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 33%;
+}
+
+.features article #phoneme-1  {
+    background-color: #F28500;
+}
+
+.features article #phoneme-2  {
+    background-color: #54A5C4;
+}
+
+.features article #phoneme-3  {
+    background-color: #C0FF00;
 }
 
 #strategy-2 {
     border-top: 2px solid #888F95;
     border-bottom: 2px solid #888F95;
+}
+
+#strategy-2 #phoneme-2  {
+    width: 45%;
+}
+
+#strategy-3 #phoneme-1  {
+    width: 45%;
 }
 
 footer  {
