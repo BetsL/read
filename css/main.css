@@ -106,10 +106,10 @@ html  {
 }
 
 body  {
+    color: #5D6063;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: #5D6063;
 }
 
 ul  {
@@ -122,15 +122,15 @@ a {
 }
 
 h1, h2, p, a    {
-    line-height: 1.3em;
     font-weight: lighter;
     font-style: lighter;
+    line-height: 1.3em;
     text-align: center;
 }
 
 .content-wrapper  {
-    width: 90%;
     margin: 0;
+    width: 90%;
 }
 
 
@@ -141,8 +141,8 @@ header  {
     background-color: #54575A;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
+      align-items: center;
+      flex-flow: row wrap;
 }
 
 header .content-wrapper {
@@ -150,33 +150,33 @@ header .content-wrapper {
     padding: 0.56em;
     width: 33%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row wrap;
 }
 
 header nav  {
     display: flex;
-    justify-content: inherit;
-    align-items: center;
-    flex-flow: row wrap;
+      justify-content: inherit;
+      align-items: center;
+      flex-flow: row wrap;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
     margin: 0;
     padding: 0.6em;
+    display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-flow: row wrap;
 }
 
 footer  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
     border-top: 1px solid #888F95;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
 }
 
 
@@ -188,8 +188,8 @@ footer  {
 .hero-area  {
     background-color: #5D6063;
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+      justify-content: center;
+      flex-flow: row wrap;
     padding-top: 9em;
     padding-bottom: 9em;
 }
@@ -199,17 +199,17 @@ footer  {
     font-weight: lighter;
     font-style: lighter;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
 }
 
 .hero-area h1 a {
-    color: #fff;
+    color: #FFF;
 }
 
 .hero-area h1 a:hover {
-    color: #F28500;
+    color: #F28500;             /* tangerine */
     transform: scale(1.1);
 }
 
@@ -227,14 +227,14 @@ footer  {
 
 .features .strategies-items {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
     padding: inherit;
 }
 
 .features article h2  {
-    font-size: 3rem;
+    font-size: 2em;
     padding: auto 1em;
 }
 
@@ -247,31 +247,31 @@ footer  {
 }
 
 .features article .example {
+    display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
     font-size: 3em;
     padding: 1em;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
 }
 
-.features article #phoneme-1,
-#phoneme-2, #phoneme-3  {
+.features article #phonic-1,
+#phonic-2, #phonic-3  {
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+      justify-content: center;
+      flex-flow: row wrap;
     width: 33%;
 }
 
-.features article #phoneme-1  {
-    background-color: #F28500;
+.features article #phonic-1  {
+    background-color: #F28500;    /* tangerine */
 }
 
-.features article #phoneme-2  {
-    background-color: #54A5C4;
+.features article #phonic-2  {
+    background-color: #54A5C4;    /* teal */
 }
 
-.features article #phoneme-3  {
-    background-color: #C0FF00;
+.features article #phonic-3  {
+    background-color: #C0FF00;    /* electric lime */
 }
 
 #strategy-2 {
@@ -279,11 +279,11 @@ footer  {
     border-bottom: 2px solid #888F95;
 }
 
-#strategy-2 #phoneme-2  {
+#strategy-2 #phonic-2  {
     width: 45%;
 }
 
-#strategy-3 #phoneme-1  {
+#strategy-3 #phonic-1  {
     width: 45%;
 }
 
@@ -378,12 +378,54 @@ footer  {
 
     /* Features */
 
-    #strategy-2 #phoneme-2  {
+    .features article h2  {
+        font-size: 2.5em;
+        padding: auto 1em;
+    }
+
+    #strategy-2 #phonic-2  {
         flex-basis: 33%
     }
 
-    #strategy-3 #phoneme-1  {
+    #strategy-3 #phonic-1  {
         flex-basis: 33%;
+    }
+}
+
+@media only screen and (min-width: 1200px)  {
+
+    /* Header */
+
+    header nav a {
+        font-size: 1.5em;
+    }
+
+    /* Features */
+
+    .features .content-wrapper  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .features article h2  {
+        font-size: 2.5em;
+        padding: auto 1em;
+    }
+
+    .strategies-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 33.3%;
+    }
+
+    #strategy-2 {
+        border-left: 1px solid #888F95;
+        border-right: 1px solid #888F95;
+        border-top: none;
+        border-bottom: none;
     }
 }
 
