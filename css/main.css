@@ -171,6 +171,10 @@ header nav ul {
       flex-flow: row wrap;
 }
 
+header nav a:hover  {
+    text-decoration: underline;
+}
+
 footer  {
     border-top: 1px solid #888F95;
     display: flex;
@@ -275,9 +279,11 @@ footer  {
 }
 
 #strategy-2 {
-    border-top: 2px solid #888F95;
-    border-bottom: 2px solid #888F95;
+    border-top: 0.5px solid #888F95;
+    border-bottom: 0.5px solid #888F95;
 }
+
+/*  unnecessary with phonics update(?)
 
 #strategy-2 #phonic-2  {
     width: 45%;
@@ -286,6 +292,8 @@ footer  {
 #strategy-3 #phonic-1  {
     width: 45%;
 }
+
+*/
 
 
 /* ==========================================================================
