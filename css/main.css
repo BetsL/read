@@ -382,6 +382,14 @@ footer  {
    Modify as content requires.
    ========================================================================== */
 
+
+/* @media only screen and (max-width: 240px) {
+
+
+    .features article .example  {
+        font-size: 1em;
+    }*/
+
 @media only screen and (min-width: 768px) {
 
     /* Features */
