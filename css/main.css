@@ -383,12 +383,13 @@ footer  {
    ========================================================================== */
 
 
-/* @media only screen and (max-width: 240px) {
+/*@media only screen and (max-width: 240px) {
 
-
-    .features article .example  {
-        font-size: 1em;
-    }*/
+    .features article #phonic-1,
+    #phonic-2, #phonic-3  {
+        width: 40%;
+    }
+}*/
 
 @media only screen and (min-width: 768px) {
 
