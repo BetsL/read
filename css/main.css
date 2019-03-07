@@ -382,6 +382,34 @@ footer  {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (max-width: 479px) {
+
+    .hero-area  {
+        padding-top: 8.5em;
+        padding-bottom: 8.5em;
+    }
+
+    .hero-area h1 {
+        font-size: 5em;
+    }
+
+    .features article .example {
+        display: flex;
+          justify-content: center;
+          flex-flow: row wrap;
+        font-size: 1.5em;
+        padding: 1em;
+    }
+
+    .features article #phonic-1,
+    #phonic-2, #phonic-3  {
+        display: flex;
+          justify-content: center;
+          flex-flow: row wrap;
+        width: 33%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
 
     /* Features */
@@ -406,6 +434,17 @@ footer  {
 
     header nav a {
         font-size: 1.5em;
+    }
+
+    /* Hero Area */
+
+    .hero-area  {
+        padding-top: 11em;
+        padding-bottom: 11em;
+    }
+
+    .hero-area h1 {
+        font-size: 7em;
     }
 
     /* Features */
