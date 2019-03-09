@@ -385,8 +385,8 @@ footer  {
 @media only screen and (max-width: 479px) {
 
     .hero-area  {
-        padding-top: 6em;
-        padding-bottom: 12em;
+        padding-top: 8em;
+        padding-bottom: 10em;
     }
 
     .hero-area h1 {
@@ -442,6 +442,7 @@ footer  {
 
     header nav a {
         font-size: 1.5em;
+        padding-left: 1em;
     }
 
     /* Hero Area */
