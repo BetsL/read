@@ -284,10 +284,8 @@ footer  {
 }
 
 button {
-    border: 1px solid #54575A;
-    /*border-radius: 10px;*/
-    padding: 20px;
-    /*background: rgba(0,0,0,0.7);*/
+    border: 1px dotted #54575A;
+    padding: 10px 25px;
     color: #C0FF00;
 }
 
@@ -387,7 +385,7 @@ button {
     }
 }*/
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
 
     /* Features */
 
