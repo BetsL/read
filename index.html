@@ -118,7 +118,6 @@
       myAudio.play();
     }
   };
-  myAudio.currentTime = 0; // rewind to the start?
   myAudio.onplaying = function() {
     isPlaying = true;
   };
@@ -126,6 +125,13 @@
     isPlaying = false;
   };
 
+  </script>
+
+  <script type="text/javascript">
+  document.onreadystatechange = function(){//window.addEventListener('readystatechange',function(){...}); (for Netscape) and window.attachEvent('onreadystatechange',function(){...}); (for IE and Opera) also work
+    if(document.readyState=='loaded' || document.readyState=='complete')
+        alert('Audio is under construction, E.H.');
+  }
   </script>
 </body>
 
