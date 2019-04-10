@@ -51,8 +51,8 @@
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-2">a</span><span id="phonic-3">t</span></p>
                       </article>
                       <div class="button-container">
-                        <button onClick="togglePlay()" type="button"> ►
-                          <audio id="myAudio" src="sounds/pointing-a.mp3"</audio>
+                        <button id="first" onClick="togglePlay()" type="button"> ►
+                          <audio id="myAudio" src="sounds/pointing-a.mp3" preload="auto"</audio>
                         </button>
                       </div>
                   </div>
@@ -62,8 +62,8 @@
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-2">a</span><span id="phonic-2">t</span></p>
                       </article>
                       <div class="button-container">
-                        <button onClick="togglePlay()" type="button"> ►
-                          <audio id="myAudio" src="sounds/chunking-b.mp3"</audio>
+                        <button id="second" onClick="togglePlay()" type="button"> ►
+                          <audio id="myAudio2" src="sounds/chunking-b.mp3" preload="auto"</audio>
                         </button>
                       </div>
                   </div>
@@ -73,8 +73,8 @@
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-1">a</span><span id="phonic-2">t</span></p>
                       </article>
                       <div class="button-container">
-                        <button onClick="togglePlay()" type="button"> ►
-                          <audio id="myAudio" src="sounds/sliding.mp3"</audio>
+                        <button id="third" onClick="togglePlay()" type="button"> ►
+                          <audio id="myAudio3" src="sounds/strategy-5.mp3" preload="auto"</audio>
                         </button>
                       </div>
                   </div>
@@ -109,6 +109,9 @@
   <script>
 
   var myAudio = document.getElementById("myAudio");
+  var myAudio2 = document.getElementById("myAudio2");
+  var myAudio3 = document.getElementById("myAudio3");
+
   var isPlaying = false;
 
   function togglePlay() {
@@ -124,6 +127,9 @@
   myAudio.onpause = function() {
     isPlaying = false;
   };
+
+  document.addEventListener("click", togglePlay);
+
 
   </script>
 

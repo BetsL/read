@@ -284,7 +284,10 @@ footer  {
 }
 
 button {
-    border: 1px dotted #54575A;
+    background-color: #FFF;
+    border: 1px solid #5D6063;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
     padding: 10px 25px;
     color: #C0FF00;
 }
@@ -393,9 +396,7 @@ button {
     }
 
     button {
-        border: 1px dotted #54575A;
         padding: 3px 6px;
-        color: #C0FF00;
     }
 }
 
@@ -427,9 +428,7 @@ button {
     }
 
     button {
-        border: 1px dotted #54575A;
         padding: 8px 15px;
-        color: #C0FF00;
     }
 }
 
