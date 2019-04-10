@@ -283,17 +283,11 @@ footer  {
     border-bottom: 0.05px solid #888F95;
 }
 
-/*  unnecessary with phonics update(?)
-
-#strategy-2 #phonic-2  {
-    width: 45%;
+button {
+    border: 1px dotted #54575A;
+    padding: 10px 25px;
+    color: #C0FF00;
 }
-
-#strategy-3 #phonic-1  {
-    width: 45%;
-}
-
-*/
 
 
 /* ==========================================================================
@@ -382,11 +376,34 @@ footer  {
    Modify as content requires.
    ========================================================================== */
 
+
+@media only screen and (min-width: 240px) and (max-width: 319px) {
+
+    header nav ul li {
+        font-size: 0.8em;
+    }
+
+    .hero-area {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+
+    .hero-area h1 {
+        font-size: 2em;
+    }
+
+    button {
+        border: 1px dotted #54575A;
+        padding: 3px 6px;
+        color: #C0FF00;
+    }
+}
+
 @media only screen and (max-width: 479px) {
 
     .hero-area  {
-        padding-top: 8em;
-        padding-bottom: 10em;
+        padding-top: 9em;
+        padding-bottom: 9em;
     }
 
     .hero-area h1 {
@@ -408,19 +425,43 @@ footer  {
           flex-flow: row wrap;
         width: 33%;
     }
+
+    button {
+        border: 1px dotted #54575A;
+        padding: 8px 15px;
+        color: #C0FF00;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
+    #strategy-1,
+    #strategy-2,
+    #strategy-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+    }
+
     .hero-area  {
-        padding-top: 6em;
-        padding-bottom: 12em;
+        padding-top: 9em;
+        padding-bottom: 9em;
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
 
     /* Features */
+
+    #strategy-1,
+    #strategy-2,
+    #strategy-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+    }
 
     .features article h2  {
         font-size: 2.5em;

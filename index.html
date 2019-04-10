@@ -29,7 +29,7 @@
           <div class="content-wrapper">
               <nav>
                   <ul>
-                      <li><a href="mailto:eeharkins@henrico.k12.va.us">Room 103</a></li>
+                      <li><a href="mailto:eeharkins@henrico.k12.va.us">Rm. 103</a></li>
                   </ul>
               </nav>
           </div>
@@ -50,18 +50,33 @@
                           <h2><a href="http://blogs.henrico.k12.va.us/eeharkins/files/2019/02/Pointing-Strategy.pdf" target="_blank">Pointing Strategy</a></h2>
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-2">a</span><span id="phonic-3">t</span></p>
                       </article>
+                      <div class="button-container">
+                        <button onClick="togglePlay()" type="button"> ►
+                          <audio id="myAudio" src="sounds/pointing-a.mp3"</audio>
+                        </button>
+                      </div>
                   </div>
                   <div id="strategy-2" class="strategies-items">
                       <article>
                           <h2><a href="http://blogs.henrico.k12.va.us/eeharkins/files/2019/02/Chunking-Strategy.pdf" target="_blank">Chunking Strategy</a></h2>
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-2">a</span><span id="phonic-2">t</span></p>
                       </article>
+                      <div class="button-container">
+                        <button onClick="togglePlay()" type="button"> ►
+                          <audio id="myAudio" src="sounds/chunking-b.mp3"</audio>
+                        </button>
+                      </div>
                   </div>
                   <div id="strategy-3" class="strategies-items">
                       <article>
                           <h2><a href="http://blogs.henrico.k12.va.us/eeharkins/files/2019/02/Slide-Point-Strategy.pdf" target="_blank">Slide + Point Strategy</a></h2>
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-1">a</span><span id="phonic-2">t</span></p>
                       </article>
+                      <div class="button-container">
+                        <button onClick="togglePlay()" type="button"> ►
+                          <audio id="myAudio" src="sounds/sliding.mp3"</audio>
+                        </button>
+                      </div>
                   </div>
               </div>
           </section>
@@ -71,7 +86,7 @@
       <footer>
           <div class="content-wrapper">
               <div class="copyright">
-                  <p>&copy; 2019 | Elizabeth Harkins</p>
+                  <p>&copy; 2019 Elizabeth Harkins</p>
               </div>
           </div>
       </footer>
@@ -90,6 +105,28 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+  <script>
+
+  var myAudio = document.getElementById("myAudio");
+  var isPlaying = false;
+
+  function togglePlay() {
+    if (isPlaying) {
+      myAudio.pause()
+    } else {
+      myAudio.play();
+    }
+  };
+  myAudio.currentTime = 0; // rewind to the start?
+  myAudio.onplaying = function() {
+    isPlaying = true;
+  };
+  myAudio.onpause = function() {
+    isPlaying = false;
+  };
+
+  </script>
 </body>
 
 </html>
