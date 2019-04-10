@@ -7,4 +7,4 @@ A mini-site housing [reading] decoding strategies; an interactive tool for prima
 
 ![read-5](https://user-images.githubusercontent.com/44883733/54650455-036b9a00-4a85-11e9-9860-0814f447826a.png)
 
-![audio](https://user-images.githubusercontent.com/44883733/55911792-5f6e9d80-5baf-11e9-9e31-90fa60ba88aa.png)
+![audio1](https://user-images.githubusercontent.com/44883733/55912030-d310aa80-5baf-11e9-8c7d-d422b7982a13.png)
