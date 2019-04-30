@@ -295,6 +295,12 @@ footer  {
     outline-style: none;
 }
 
+#first:hover,
+#second:hover,
+#third:hover {
+    transform: scale(1.1);
+    background-color: #D3D3D3;
+}
 
 
 /* ==========================================================================
