@@ -292,7 +292,9 @@ footer  {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.19);
     padding: 10px 25px;
     color: #C0FF00;
+    outline-style: none;
 }
+
 
 
 /* ==========================================================================
