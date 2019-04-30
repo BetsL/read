@@ -283,7 +283,9 @@ footer  {
     border-bottom: 0.05px solid #888F95;
 }
 
-button {
+#first,
+#second,
+#third  {
     background-color: #FFF;
     border: 1px solid #5D6063;
     border-radius: 20px;

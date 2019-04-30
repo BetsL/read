@@ -51,7 +51,7 @@
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-2">a</span><span id="phonic-3">t</span></p>
                       </article>
                       <div class="button-container">
-                        <button id="first" onClick="togglePlay()" type="button"> ►
+                        <button id="first" onclick="togglePlay()" type="button"> ►
                           <audio id="myAudio" src="sounds/pointing-a.mp3" preload="auto"</audio>
                         </button>
                       </div>
@@ -62,7 +62,7 @@
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-2">a</span><span id="phonic-2">t</span></p>
                       </article>
                       <div class="button-container">
-                        <button id="second" onClick="togglePlay()" type="button"> ►
+                        <button id="second" onclick="togglePlay2()" type="button"> ►
                           <audio id="myAudio2" src="sounds/chunking-b.mp3" preload="auto"</audio>
                         </button>
                       </div>
@@ -73,7 +73,7 @@
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-1">a</span><span id="phonic-2">t</span></p>
                       </article>
                       <div class="button-container">
-                        <button id="third" onClick="togglePlay()" type="button"> ►
+                        <button id="third" onclick="togglePlay3()" type="button"> ►
                           <audio id="myAudio3" src="sounds/strategy-5.mp3" preload="auto"</audio>
                         </button>
                       </div>
@@ -108,37 +108,80 @@
 
   <script>
 
-  var myAudio = document.getElementById("myAudio");
-  var myAudio2 = document.getElementById("myAudio2");
-  var myAudio3 = document.getElementById("myAudio3");
 
-  var isPlaying = false;
+      var isPlaying = false;
 
-  function togglePlay() {
-    if (isPlaying) {
-      myAudio.pause()
-    } else {
-      myAudio.play();
-    }
-  };
-  myAudio.onplaying = function() {
-    isPlaying = true;
-  };
-  myAudio.onpause = function() {
-    isPlaying = false;
-  };
+      function togglePlay() {
 
-  document.addEventListener("click", togglePlay);
+        var myAudio = document.getElementById("myAudio");
 
+        if (isPlaying) {
+          myAudio.pause()
+        } else {
+          myAudio.play();
+        }
+      };
+      myAudio.onplaying = function() {
+        isPlaying = true;
+      };
+      myAudio.onpause = function() {
+        isPlaying = false;
+      };
+
+      document.getElementById('first').onclick = togglePlay;
+
+
+      function togglePlay2() {
+
+        var myAudio2 = document.getElementById("myAudio2");
+
+        if (isPlaying) {
+          myAudio2.pause()
+        } else {
+          myAudio2.play();
+        }
+      };
+      myAudio2.onplaying = function() {
+        isPlaying = true;
+      };
+      myAudio2.onpause = function() {
+        isPlaying = false;
+      };
+
+      document.getElementById('second').onclick = togglePlay2;
+
+
+      function togglePlay3() {
+
+        var myAudio3 = document.getElementById("myAudio3");
+
+        if (isPlaying) {
+          myAudio3.pause()
+        } else {
+          myAudio3.play();
+        }
+      };
+      myAudio3.onplaying = function() {
+        isPlaying = true;
+      };
+      myAudio3.onpause = function() {
+        isPlaying = false;
+      };
+
+      document.getElementById('third').onclick = togglePlay3;
 
   </script>
 
-  <script type="text/javascript">
+  <script type>
   document.onreadystatechange = function(){//window.addEventListener('readystatechange',function(){...}); (for Netscape) and window.attachEvent('onreadystatechange',function(){...}); (for IE and Opera) also work
     if(document.readyState=='loaded' || document.readyState=='complete')
-        alert('Audio is under construction, E.H.');
+        alert('Recording S+P tomorrow, hooray! ~E.H.');
   }
   </script>
-</body>
 
+  <script>
+
+  </script>
+
+</body>
 </html>
