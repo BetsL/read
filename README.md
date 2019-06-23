@@ -1,5 +1,7 @@
 # read
-A mini-site housing [reading] decoding strategies; an interactive tool for primary learners and their families.  // Can't wait to add some JavaScript to this ... generating ... comprehension questions +/or sight words ... or both! 
+A mini-site housing [reading] decoding strategies; an interactive tool for primary learners and their families. // Live site in active use with my classroom community // JS audio complete!
+
+This project gave me an opportunity to put my goals of (educational) transparency and accessibility into practice. I work with students/families from a variety of backgrounds/abilities and I wanted to give them keys to basic (English) literacy success. The audio and visual details were added to achieve those ends, as well as links to additional resources. Future goals include keyboard accessibility and refactoring.
 
 ![read-full-d](https://user-images.githubusercontent.com/44883733/55193355-1a914280-517d-11e9-94d0-90bd6c8e307e.png)
 
