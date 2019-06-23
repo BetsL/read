@@ -51,8 +51,8 @@
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-2">a</span><span id="phonic-3">t</span></p>
                       </article>
                       <div class="button-container">
-                        <button id="first" onclick="togglePlay()" type="button"> ►
-                          <audio id="myAudio" src="sounds/pointing-a.mp3" preload="auto"</audio>
+                        <button id="first" type="button"> ►
+                          <audio id="myAudio1" src="sounds/pointing-a.mp3" preload="auto"</audio>
                         </button>
                       </div>
                   </div>
@@ -62,7 +62,7 @@
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-2">a</span><span id="phonic-2">t</span></p>
                       </article>
                       <div class="button-container">
-                        <button id="second" onclick="togglePlay2()" type="button"> ►
+                        <button id="second" type="button"> ►
                           <audio id="myAudio2" src="sounds/chunking-b.mp3" preload="auto"</audio>
                         </button>
                       </div>
@@ -73,7 +73,7 @@
                           <p class="example"><span id="phonic-1">c</span><span id="phonic-1">a</span><span id="phonic-2">t</span></p>
                       </article>
                       <div class="button-container">
-                        <button id="third" onclick="togglePlay3()" type="button"> ►
+                        <button id="third" type="button"> ►
                           <audio id="myAudio3" src="sounds/slide-c.mp3" preload="auto"</audio>
                         </button>
                       </div>
@@ -106,104 +106,6 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
-  <script>
-
-
-      let isPlaying = false;
-
-      function togglePlay() {
-
-        const myAudio = document.getElementById("myAudio");
-
-        if (isPlaying) {
-          myAudio.pause()
-        } else {
-          myAudio.play();
-        }
-      };
-      myAudio.onplaying = function() {
-        isPlaying = true;
-      };
-      myAudio.onpause = function() {
-        isPlaying = false;
-      };
-
-      document.getElementById('first').onclick = togglePlay;
-
-
-      function togglePlay2() {
-
-        const myAudio2 = document.getElementById("myAudio2");
-
-        if (isPlaying) {
-          myAudio2.pause()
-        } else {
-          myAudio2.play();
-        }
-      };
-      myAudio2.onplaying = function() {
-        isPlaying = true;
-      };
-      myAudio2.onpause = function() {
-        isPlaying = false;
-      };
-
-      document.getElementById('second').onclick = togglePlay2;
-
-
-      function togglePlay3() {
-
-        const myAudio3 = document.getElementById("myAudio3");
-
-        if (isPlaying) {
-          myAudio3.pause()
-        } else {
-          myAudio3.play();
-        }
-      };
-      myAudio3.onplaying = function() {
-        isPlaying = true;
-      };
-      myAudio3.onpause = function() {
-        isPlaying = false;
-      };
-
-      document.getElementById('third').onclick = togglePlay3;
-
-  </script>
-
-  <script>
-  //document.onreadystatechange = function(){//window.addEventListener('readystatechange',function(){...}); (for Netscape) and window.attachEvent('onreadystatechange',function(){...}); (for IE and Opera) also work
-  //  if(document.readyState=='loaded' || document.readyState=='complete')
-  //      alert('Recording S+P tomorrow, hooray! ~E.H.');
-  //}
-  </script>
-
-   <script>
-
-      document.onreadystatechange = function(){//window.addEventListener('readystatechange',function(){...}); (for Netscape) and window.attachEvent('onreadystatechange',function(){...}); (for IE and Opera) also work
-        if(document.readyState=='loaded' || document.readyState=='complete'){
-    
-          var age = prompt('How old are you, Reader?');
-
-          if (Number(age) < 5){
-            alert('Practice using the pointing strategy with your favorite book!');
-          } else if (Number(age) > 5){
-            alert('Wow, how many strategies do you know? When would it make sense to use each one?');
-          } else if (Number(age) === 5){
-            alert('I hope you are ready to learn about reading strategies! Start with the pointing strategy.');
-          }
-        }  
-      }
-
-  </script>
-
-  <script>
-  document.getElementbyClassName('button-container').onclick = function(){
-        display.outline = 'none';
-  };
-  </script>
-
-
+  <script type='text/javascript' src='js/main.js'></script>
 </body>
 </html>
